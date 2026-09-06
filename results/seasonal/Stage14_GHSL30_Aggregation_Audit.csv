@@ -1,0 +1,2 @@
+old_local_mean,corrected_30m_mean,old_local_median,corrected_30m_median,old_local_max,corrected_30m_max,pearson_r,spearman_rho,MAE_fraction,RMSE_fraction,note
+0.0071102059289432,0.007027608058582903,0.0,0.0,0.94,0.7900000214576721,0.913510520474967,0.8029360139527417,0.0034815569011050667,0.021828343333175123,"The exported GHSL reduceResolution(sum)/900 layer was under-scaled because Earth Engine reduceResolution uses fractional pixel-overlap weights. The exported band was corrected locally by x9, equivalent to dividing the overlap-weighted built_surface value by 100 m²."

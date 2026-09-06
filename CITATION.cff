@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated research article and the versioned Zenodo reproducibility record."
+title: "Jolo Island Surface Heat GeoAI Reproducibility Package"
+type: dataset
+authors:
+  - family-names: "Adju"
+    given-names: "Fadzlur-Nijar A."
+    orcid: "https://orcid.org/0009-0003-1865-7596"
+    affiliation: "College of Computing Studies, Mindanao State University–Sulu, Philippines"
+version: "1.0.0"
+date-released: "2026-09-06"
+keywords:
+  - "land surface temperature"
+  - "GeoAI"
+  - "explainable machine learning"
+  - "SHAP"
+  - "spatial cross-validation"
+  - "Landsat"
+  - "Jolo Island"
+  - "Philippines"

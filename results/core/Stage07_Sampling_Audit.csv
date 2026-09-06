@@ -1,0 +1,2 @@
+n_samples,lst_mean,lst_sd,lst_p5,lst_median,lst_p95,obs_median,coast_max_m,municipalities,n_blocks_1km,n_blocks_2km,n_blocks_3km,n_blocks_5km
+8838,32.048717,2.2769742,28.32999210357666,32.012108,35.6700740814209,37.0,9792.186,11,915,255,126,54

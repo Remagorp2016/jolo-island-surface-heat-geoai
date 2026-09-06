@@ -1,0 +1,12 @@
+predictor,VIF
+NDVI_MAM_median,7.659201945589911
+NDBI_MAM_median,inf
+NDMI_MAM_median,inf
+BSI_MAM_median,90.80070086204782
+GHSL_built_local_fraction,1.353837401393097
+elevation_m,2.4363365567850126
+slope_deg,1.4743704232600827
+northness,1.0274465344076047
+eastness,1.0129724453115088
+distance_to_coast_m,10.773883403516267
+distance_to_permanent_water_m,11.770812083536478

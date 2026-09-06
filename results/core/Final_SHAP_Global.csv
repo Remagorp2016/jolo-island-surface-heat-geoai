@@ -1,0 +1,14 @@
+feature,mean_abs_SHAP
+num__elevation_m,0.8231776951945713
+num__NDVI_MAM_median,0.6146092094285135
+num__NDBI_MAM_median,0.3016129976889577
+num__distance_to_coast_m,0.25300502201527
+num__eastness,0.17427285206928556
+num__slope_deg,0.057355873304992075
+num__northness,0.0349111141321013
+num__GHSL_built_local_fraction,0.02709526831936701
+wc__WorldCover_cat_95,0.022692017873349367
+wc__WorldCover_cat_50,0.02219020994761784
+wc__WorldCover_cat_30,0.011745405843839443
+wc__WorldCover_cat_10,0.004577072164240077
+wc__WorldCover_cat_Other,0.0
