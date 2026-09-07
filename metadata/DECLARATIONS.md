@@ -33,12 +33,6 @@ Fadzlur-Nijar A. Adju: Conceptualization; Methodology; Software; Formal analysis
 
 During the preparation of this work, the author used OpenAI ChatGPT to support research-workflow structuring, Earth Engine and Python code drafting/debugging, statistical workflow checking, literature organization, and manuscript language/structure. The author reviewed and edited the outputs as needed, verified the analytical results and references against source data and records, and takes full responsibility for the content of the work.
 
-## Data availability — before Zenodo DOI assignment
+## Data availability
 
-Derived data, analytical outputs, reproducibility code, model diagnostics, sensitivity analyses, and mapped products supporting this study are prepared for public archiving in Zenodo. Primary Earth-observation datasets remain available from their respective providers and are documented in the repository and manuscript.
-
-## Data availability — after Zenodo DOI assignment
-
-Replace `ZENODO_DOI` below with the final version DOI:
-
-Derived data, analytical outputs, reproducibility code, model diagnostics, sensitivity analyses, and mapped products supporting this study are openly archived in Zenodo as **“Jolo Island Surface Heat GeoAI: Reproducibility Package,” version 1.0.0, DOI: ZENODO_DOI**. Primary Earth-observation datasets remain available from their respective providers and are documented in the manuscript and repository.
+Derived data, analytical outputs, reproducibility code, model diagnostics, sensitivity analyses, and mapped products supporting this study are openly archived in Zenodo as Jolo Island Surface Heat GeoAI: Reproducibility Package, version 1.0.0, DOI: 10.5281/zenodo.22541245. Primary Earth-observation datasets remain available from their respective providers and are documented in the manuscript and repository.
