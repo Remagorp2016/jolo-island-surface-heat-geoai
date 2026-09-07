@@ -36,9 +36,16 @@ Creative Commons Attribution 4.0 International for the reproducibility dataset/d
 No specific grant.
 
 ## Related identifier
-After creating the public GitHub repository, add its URL as a related identifier with relation **isSupplementedBy** or **isIdenticalTo** only if you intentionally make the contents identical.
 
-After the journal article receives a DOI, add that DOI as a related identifier with relation **isSupplementTo**.
+GitHub release:
+https://github.com/Remagorp2016/jolo-island-surface-heat-geoai/releases/tag/v1.0.0
+
+Relation: **isSupplementedBy**
+
+After the journal article receives a DOI, add the article DOI as a related identifier with relation **isSupplementTo**.
 
 ## DOI
-Use Zenodo's **Get a DOI now!** function if you want to reserve the DOI before finalizing the manuscript data-availability statement.
+
+10.5281/zenodo.22541245
+
+DOI URL: https://doi.org/10.5281/zenodo.22541245
