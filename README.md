@@ -95,11 +95,9 @@ All random operations use fixed seeds as recorded in the scripts.
 
 ## Data availability and DOI
 
-A versioned full reproducibility archive is intended for deposit in Zenodo. After publication of the Zenodo record, replace this line with the assigned DOI:
+**Zenodo DOI:**
 
-**Zenodo DOI: TO BE ASSIGNED**
-
-The GitHub repository and Zenodo record should be cross-linked as related research outputs.
+DOI: 10.5281/zenodo.22541245
 
 ## Authorship and declarations
 
@@ -123,4 +121,4 @@ See `metadata/DECLARATIONS.md` for the full statements.
 
 ## Citation
 
-Until the article and Zenodo DOI are available, cite the repository using `CITATION.cff`. After Zenodo publication, update the citation with the version DOI.
+Adju, F.-N. A. (2026). Jolo Island Surface Heat GeoAI: Reproducibility Package (Version 1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.22541245
