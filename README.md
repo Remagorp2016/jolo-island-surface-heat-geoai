@@ -1,29 +1,35 @@
 # Jolo Island Surface Heat GeoAI
 
-Reproducibility repository for:
+Reproducibility repository for the Version 2 manuscript:
 
-**Explaining Fine-Scale Surface Heat Across a Tropical Volcanic Island Using Spatially Validated GeoAI: Jolo Island, Philippines**
+**Prediction-Attribution Transfer in Environmental GeoAI: Matched Geographic Validation of Surface Heat**
 
 **Author:** Fadzlur-Nijar A. Adju  
 **Affiliation:** College of Computing Studies, Mindanao State University–Sulu, Philippines  
 **ORCID:** https://orcid.org/0009-0003-1865-7596  
 **Corresponding author:** fadzlur-nijar.adju@msusulu.edu.ph
 
-## Study overview
+## Version status
 
-This repository contains the derived datasets, analysis scripts, model outputs, and figures used to evaluate island-wide land surface temperature (LST) controls across Jolo Island, Philippines. The workflow combines Landsat 8/9 Collection 2 Level-2 surface temperature, spectral indices, GHSL built-up information, ESA WorldCover, NASADEM terrain variables, spatially blocked cross-validation, municipality-held-out validation, SHAP explainability, seasonal robustness tests, and residual spatial diagnostics.
+- **Version 1.0.0** is the immutable original reproducibility archive: DOI **10.5281/zenodo.22541245**.
+- **Version 2.0.0** adds the matched prediction-attribution transfer framework and EMS robustness analyses. The GitHub files are prepared for the Version 2 archival release; the new version-specific Zenodo DOI will be added here after the new Zenodo version is published.
 
-The primary response is the **March–May (MAM) 2013–2026 median daytime Landsat LST climatology**. A 300 m systematic sampling lattice produced **8,838 terrestrial samples** for the main analysis.
+## Study and methodological contribution
 
-Key reported results include:
+The empirical test bed is a 2013–2026 Landsat 8/9 surface-temperature climatology for Jolo Island, Philippines, sampled on a 300 m systematic terrestrial lattice (**n = 8,838**). Predictors represent vegetation, built/exposed surfaces, land cover, elevation, terrain orientation, and coastal position.
 
-- LightGBM random 5-fold CV: **R² ≈ 0.729**
-- LightGBM 3 km spatial-block CV: **R² ≈ 0.706**
-- LightGBM 5 km spatial-block CV: **R² ≈ 0.686**
-- Leave-one-municipality-out overall: **R² ≈ 0.669**
-- Residual Moran's I: **≈ 0.530** with permutation **p = 0.005**
-- Elevation and NDVI are the leading cooling controls; NDBI is a major warming control
-- The broad driver hierarchy persists across MAM, JJA, and DJF climatologies
+Version 2 focuses on a broader environmental-modelling problem: **predictive transferability and attribution transferability are not the same property**. SHAP explanations are therefore recalculated independently from models retrained under the same geographic exclusions used to test prediction.
+
+Canonical LightGBM benchmarks are:
+
+- random five-fold CV: **R² = 0.729**
+- 3 km spatial-block CV: **R² = 0.706**
+- 5 km spatial-block CV: **R² = 0.686**
+- leave-one-municipality-out pooled transfer: **R² = 0.669**
+
+Attribution rankings are invariant across 1–3 km held-out folds (Kendall's **W = 1.000**) and remain highly concordant at 5 km (**W = 0.985**). Municipality-held-out prediction skill varies strongly, while attribution-rank similarity remains mostly high; their association is weak (**Spearman ρ = 0.085, p = 0.803**).
+
+Dedicated stress tests further show that attribution concordance remains high under block-origin shifts, tree-algorithm substitution, and removal of dominant predictors even when predictive skill changes materially. Significant residual spatial autocorrelation (**Moran's I = 0.530, p = 0.005**) is retained as an explicit limitation: stable attribution is reproducibility of the fitted model's explanation structure, not causal truth or complete physical explanation.
 
 ## Repository structure
 
@@ -32,6 +38,7 @@ Key reported results include:
 ├── CITATION.cff
 ├── LICENSE
 ├── README.md
+├── RELEASE_NOTES_v2.0.0.md
 ├── requirements.txt
 ├── environment.yml
 ├── data/
@@ -40,64 +47,72 @@ Key reported results include:
 ├── docs/
 ├── figures/
 ├── metadata/
+│   └── ZENODO_V2_METADATA.md
+├── releases/
+│   ├── Jolo_V2_MatchedTransfer_CompleteOutputs.zip
+│   └── Jolo_V2_StressTests_FrozenOutputs.zip
 ├── results/
 │   ├── core/
-│   └── seasonal/
+│   ├── seasonal/
+│   └── v2_ems/
+│       ├── matched_transfer/
+│       └── stress_tests/
 └── scripts/
     ├── gee/
     └── python/
+        ├── run_reproduction.py
+        ├── run_v2_ems_stress_tests.py
+        └── verify_v2_ems_archive.py
 ```
 
-## Reproducibility levels
-
-### Level 1 — Reproduce the reported statistical/ML results
-
-The files in `data/derived/` are analysis-ready and are sufficient to rerun the core and seasonal model evaluations without downloading raw Earth-observation archives.
-
-Run:
+## Reproduce Version 1 canonical benchmarks
 
 ```bash
 python -m venv .venv
-# Windows:
+# Windows
 .venv\Scripts\activate
-# macOS/Linux:
+# macOS/Linux
 source .venv/bin/activate
 
 pip install -r requirements.txt
 python scripts/python/run_reproduction.py
 ```
 
-Outputs are written to `reproduced_results/`.
+## Reproduce the Version 2 robustness layer
 
-### Level 2 — Reconstruct the main sample from exported rasters
+```bash
+python scripts/python/run_v2_ems_stress_tests.py
+```
 
-The full Zenodo archive includes the larger intermediate GeoTIFFs used to reconstruct the main analysis sample. See `scripts/python/build_main_sample_from_rasters.py`.
+The rerun writes to `reproduced_results/v2_ems/` so that the frozen manuscript-supporting outputs are not overwritten.
 
-### Level 3 — Upstream Earth Engine processing
+Verify the frozen Version 2 archive:
 
-Representative final Google Earth Engine scripts are included in `scripts/gee/`. Raw Landsat, GHSL, ESA WorldCover, NASADEM, and other provider archives are **not redistributed**. They remain available from their respective providers.
+```bash
+python scripts/python/verify_v2_ems_archive.py
+```
+
+See `results/v2_ems/README.md` for the canonical-versus-stress-test distinction and exact headline values.
 
 ## Data notes
 
-`Jolo_Modeling_Sample_Local_v03.csv` is the frozen main 300 m modeling sample.
+`data/derived/Jolo_Modeling_Sample_Local_v03.csv` is the frozen main 300 m modeling sample.
 
-`Jolo_Seasonal_Robustness_ModelSample_v04.csv` is the frozen seasonal robustness sample containing MAM, JJA, and DJF response/predictor values and the corrected 30 m GHSL built fraction.
+`data/derived/Jolo_Seasonal_Robustness_ModelSample_v04.csv` is the frozen seasonal sample containing MAM, JJA, and DJF response/predictor values and the independently audited 30 m GHSL built fraction.
 
-Coordinates are provided for reproducibility and spatial partitioning. Longitude/latitude were **not** used as ordinary explanatory predictors in the reported models.
-
-WorldCover class is categorical and is one-hot encoded during modeling. Rare classes with fewer than 30 observations are collapsed to `Other`.
+Longitude and latitude are retained for diagnostics and mapping but are **not** ordinary explanatory predictors. WorldCover is treated categorically and one-hot encoded, with rare classes collapsed to `Other`.
 
 ## Software environment
 
-The final analysis was run with Python 3.11 and the package versions recorded in `requirements.txt`.
-
-All random operations use fixed seeds as recorded in the scripts.
+The analysis uses the package versions recorded in `requirements.txt`, including NumPy, pandas, SciPy, scikit-learn, XGBoost, LightGBM, SHAP, statsmodels, GeoPandas, Rasterio, and Matplotlib. Deterministic seeds and fixed model configurations are encoded in the scripts.
 
 ## Data availability and DOI
 
-**Zenodo DOI:**
+Current archived version:
 
-DOI: 10.5281/zenodo.22541245
+**Version 1.0.0 — DOI: 10.5281/zenodo.22541245**
+
+A Version 2 Zenodo record will be created as a new version of the same archive. The Version 2 DOI will replace this status note only after Zenodo publishes it.
 
 ## Authorship and declarations
 
@@ -107,18 +122,18 @@ DOI: 10.5281/zenodo.22541245
 
 **Competing interests:** The author declares no conflict of interest.
 
-**Acknowledgments:** None.
-
 **Ethics:** Not applicable. The study uses satellite, gridded geospatial, and administrative-boundary data and involves no human participants, personal data, or animals.
-
-See `metadata/DECLARATIONS.md` for the full statements.
 
 ## Licenses
 
 - Analysis code in `scripts/`: MIT License.
-- Original documentation and derived tabular outputs in this repository: CC BY 4.0.
-- Third-party and upstream datasets retain their original provider licenses and terms. No claim of ownership is made over source products.
+- Original documentation and derived tabular outputs: CC BY 4.0.
+- Third-party and upstream datasets retain their original provider licenses and terms.
 
 ## Citation
 
-Adju, F.-N. A. (2026). Jolo Island Surface Heat GeoAI: Reproducibility Package (Version 1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.22541245
+Until the Version 2 Zenodo record is published, cite the existing archived package as:
+
+Adju, F.-N. A. (2026). *Jolo Island Surface Heat GeoAI: Reproducibility Package* (Version 1.0.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.22541245
+
+After Version 2 publication, `CITATION.cff` and this section will be updated with the new version-specific DOI.

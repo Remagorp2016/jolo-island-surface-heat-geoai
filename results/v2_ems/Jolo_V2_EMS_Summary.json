@@ -1,0 +1,70 @@
+{
+  "release": "v2.0.0",
+  "manuscript_title": "Prediction-Attribution Transfer in Environmental GeoAI: Matched Geographic Validation of Surface Heat",
+  "canonical_benchmark": {
+    "random_cv_r2": 0.729,
+    "blocked_3km_r2": 0.706,
+    "blocked_5km_r2": 0.686,
+    "lomo_pooled_r2": 0.669,
+    "residual_moran_i": 0.53,
+    "residual_permutation_p": 0.005
+  },
+  "stress_reference_3km": {
+    "LightGBM": {
+      "r2": 0.7041767059926909,
+      "rmse": 1.2383679765809485,
+      "mae": 0.9542953736340376,
+      "kendall_w": 0.992
+    },
+    "XGBoost": {
+      "r2": 0.7031727360760247,
+      "rmse": 1.2404675933726332,
+      "mae": 0.955345689772472
+    },
+    "RandomForest": {
+      "r2": 0.7002813198104272,
+      "rmse": 1.2464946944832997,
+      "mae": 0.9629443294577749
+    }
+  },
+  "block_origin": {
+    "r2_min": 0.69182187984735,
+    "r2_max": 0.7044450837518101,
+    "kendall_w_min": 0.9626666666666667,
+    "kendall_w_max": 0.992
+  },
+  "ablation": {
+    "full": {
+      "r2": 0.7041767059926909,
+      "kendall_w": 0.992
+    },
+    "without_elevation": {
+      "r2": 0.6311149697177063,
+      "kendall_w": 0.9923809523809524
+    },
+    "without_elevation_and_ndvi": {
+      "r2": 0.613295625340263,
+      "kendall_w": 0.9885714285714285
+    }
+  },
+  "multiscale_attribution_kendall_w": {
+    "1km": 1.0,
+    "2km": 1.0,
+    "3km": 1.0,
+    "5km": 0.9847619047619047
+  },
+  "seasonal_mean_pairwise_rank_rho": {
+    "MAM": 0.9904761904761905,
+    "JJA": 0.9857142857142858,
+    "DJF": 0.95
+  },
+  "seed_stability": {
+    "n_seeds": 10,
+    "kendall_w": 1.0
+  },
+  "environmental_support": {
+    "di_threshold": 1.890124,
+    "inside_pct": 91.559841
+  },
+  "previous_zenodo_doi": "10.5281/zenodo.22541245"
+}

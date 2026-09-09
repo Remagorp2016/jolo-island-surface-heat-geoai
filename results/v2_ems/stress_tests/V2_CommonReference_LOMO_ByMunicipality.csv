@@ -1,0 +1,100 @@
+scheme,held_out_municipality,held_out_n,predictor,mean_abs_SHAP,rank,direction_rho
+LOMO_common_reference,Talipao,1865,NDVI_MAM_median,0.6238966161445774,2,-0.9638220268829022
+LOMO_common_reference,Talipao,1865,NDBI_MAM_median,0.25145938373946664,4,0.9286758303239183
+LOMO_common_reference,Talipao,1865,GHSL_built_local_fraction,0.03060052166786013,9,0.3262266003575861
+LOMO_common_reference,Talipao,1865,elevation_m,0.8485833403965772,1,-0.9673144049363188
+LOMO_common_reference,Talipao,1865,slope_deg,0.06358053867050632,6,-0.09747413727744281
+LOMO_common_reference,Talipao,1865,northness,0.046562461254609104,7,-0.25633563630717576
+LOMO_common_reference,Talipao,1865,eastness,0.18415277646578185,5,0.9210272671181187
+LOMO_common_reference,Talipao,1865,distance_to_coast_m,0.29048063217199516,3,-0.8207790645492673
+LOMO_common_reference,Talipao,1865,WorldCover,0.03934114991819341,8,
+LOMO_common_reference,Patikul,1495,NDVI_MAM_median,0.5818631058907796,2,-0.94694600771591
+LOMO_common_reference,Patikul,1495,NDBI_MAM_median,0.30492444049544143,3,0.9581192301103748
+LOMO_common_reference,Patikul,1495,GHSL_built_local_fraction,0.026471997414647255,9,0.3167421922240429
+LOMO_common_reference,Patikul,1495,elevation_m,0.7037314501731522,1,-0.958725953450524
+LOMO_common_reference,Patikul,1495,slope_deg,0.06103785821555149,6,-0.42209923082682194
+LOMO_common_reference,Patikul,1495,northness,0.0325305497471696,8,-0.3976176515234785
+LOMO_common_reference,Patikul,1495,eastness,0.15885982959642678,5,0.9261006876191191
+LOMO_common_reference,Patikul,1495,distance_to_coast_m,0.1963847609488676,4,-0.7142888074529553
+LOMO_common_reference,Patikul,1495,WorldCover,0.04317938988304281,7,
+LOMO_common_reference,Indanan,1123,NDVI_MAM_median,0.5534165575582959,2,-0.9558620932497238
+LOMO_common_reference,Indanan,1123,NDBI_MAM_median,0.303928847177065,4,0.9629456701059353
+LOMO_common_reference,Indanan,1123,GHSL_built_local_fraction,0.02429614222118697,9,0.29940483389652744
+LOMO_common_reference,Indanan,1123,elevation_m,0.8161932937129441,1,-0.9398968140937688
+LOMO_common_reference,Indanan,1123,slope_deg,0.05639218892175841,6,-0.24338754674907015
+LOMO_common_reference,Indanan,1123,northness,0.03755979417304332,7,0.2872318215001821
+LOMO_common_reference,Indanan,1123,eastness,0.14382206787513457,5,0.9268709754984963
+LOMO_common_reference,Indanan,1123,distance_to_coast_m,0.3091233682179032,3,-0.7851764715008543
+LOMO_common_reference,Indanan,1123,WorldCover,0.03375245767398222,8,
+LOMO_common_reference,Luuk,860,NDVI_MAM_median,0.6067697708916358,2,-0.954306137224856
+LOMO_common_reference,Luuk,860,NDBI_MAM_median,0.3169015487223774,3,0.9563390328899211
+LOMO_common_reference,Luuk,860,GHSL_built_local_fraction,0.0298129983182512,9,0.3047152486557738
+LOMO_common_reference,Luuk,860,elevation_m,0.797699297846419,1,-0.9352045044293421
+LOMO_common_reference,Luuk,860,slope_deg,0.05983714841153898,6,-0.15560394495970972
+LOMO_common_reference,Luuk,860,northness,0.04629624436748651,7,-0.5020007502618263
+LOMO_common_reference,Luuk,860,eastness,0.16530197582807252,5,0.9243003071787438
+LOMO_common_reference,Luuk,860,distance_to_coast_m,0.2821597189106095,4,-0.7625757677060059
+LOMO_common_reference,Luuk,860,WorldCover,0.03420380290291764,8,
+LOMO_common_reference,Parang,760,NDVI_MAM_median,0.5195484512713925,2,-0.967907652100721
+LOMO_common_reference,Parang,760,NDBI_MAM_median,0.3219384366990752,3,0.9570645625149784
+LOMO_common_reference,Parang,760,GHSL_built_local_fraction,0.028712626327147016,9,0.325427622761966
+LOMO_common_reference,Parang,760,elevation_m,0.906012741900325,1,-0.9676169899564175
+LOMO_common_reference,Parang,760,slope_deg,0.06070495827132168,6,-0.47103043397692085
+LOMO_common_reference,Parang,760,northness,0.03855260110616012,8,-0.3736520662216364
+LOMO_common_reference,Parang,760,eastness,0.1488743198931474,5,0.9377111468610001
+LOMO_common_reference,Parang,760,distance_to_coast_m,0.2898716754671589,4,-0.8105084042387103
+LOMO_common_reference,Parang,760,WorldCover,0.03947676657002886,7,
+LOMO_common_reference,Kalingalan Caluang,640,NDVI_MAM_median,0.6472828132801056,2,-0.9621231288771862
+LOMO_common_reference,Kalingalan Caluang,640,NDBI_MAM_median,0.29434068776725936,3,0.9593182653267084
+LOMO_common_reference,Kalingalan Caluang,640,GHSL_built_local_fraction,0.024882736426445676,9,0.30283162567918176
+LOMO_common_reference,Kalingalan Caluang,640,elevation_m,0.8154699796631849,1,-0.9575291605111097
+LOMO_common_reference,Kalingalan Caluang,640,slope_deg,0.05252314399083254,6,-0.2491688564823375
+LOMO_common_reference,Kalingalan Caluang,640,northness,0.03562546469015944,8,0.0649745527681839
+LOMO_common_reference,Kalingalan Caluang,640,eastness,0.19297931658558096,5,0.9404791014747674
+LOMO_common_reference,Kalingalan Caluang,640,distance_to_coast_m,0.2319125197737111,4,-0.7014100315542884
+LOMO_common_reference,Kalingalan Caluang,640,WorldCover,0.040010950321965465,7,
+LOMO_common_reference,Omar,615,NDVI_MAM_median,0.6376165648098334,2,-0.9684174786740657
+LOMO_common_reference,Omar,615,NDBI_MAM_median,0.32875162574204764,3,0.9640894442316377
+LOMO_common_reference,Omar,615,GHSL_built_local_fraction,0.029616745350770583,9,0.31012142431006584
+LOMO_common_reference,Omar,615,elevation_m,0.7639386324696461,1,-0.9309082974435745
+LOMO_common_reference,Omar,615,slope_deg,0.057105173363492995,6,-0.46774086140271914
+LOMO_common_reference,Omar,615,northness,0.032827333543372916,8,-0.48286555763950345
+LOMO_common_reference,Omar,615,eastness,0.185276608384938,5,0.9375926827062077
+LOMO_common_reference,Omar,615,distance_to_coast_m,0.23978200180701037,4,-0.7187194192382363
+LOMO_common_reference,Omar,615,WorldCover,0.04033490615632266,7,
+LOMO_common_reference,Old Panamao,572,NDVI_MAM_median,0.6494749295036779,2,-0.9674197199223364
+LOMO_common_reference,Old Panamao,572,NDBI_MAM_median,0.31662222953241254,3,0.9577656155503343
+LOMO_common_reference,Old Panamao,572,GHSL_built_local_fraction,0.026830220404391585,9,0.3156647886743717
+LOMO_common_reference,Old Panamao,572,elevation_m,0.771346172655314,1,-0.9208119196990899
+LOMO_common_reference,Old Panamao,572,slope_deg,0.059231121325761235,6,-0.2640577478270626
+LOMO_common_reference,Old Panamao,572,northness,0.03763280819992449,7,-0.3524659279298305
+LOMO_common_reference,Old Panamao,572,eastness,0.18312911282754393,5,0.9354269628812685
+LOMO_common_reference,Old Panamao,572,distance_to_coast_m,0.2534621968480395,4,-0.7562265260741815
+LOMO_common_reference,Old Panamao,572,WorldCover,0.03531551670912657,8,
+LOMO_common_reference,Maimbung,495,NDVI_MAM_median,0.551613283366826,2,-0.9621224240401803
+LOMO_common_reference,Maimbung,495,NDBI_MAM_median,0.3106764153993365,3,0.966572002167992
+LOMO_common_reference,Maimbung,495,GHSL_built_local_fraction,0.027401674320015744,9,0.3160049614899715
+LOMO_common_reference,Maimbung,495,elevation_m,0.8993007082635394,1,-0.9612964602622097
+LOMO_common_reference,Maimbung,495,slope_deg,0.060777695606750747,6,-0.2069185132701665
+LOMO_common_reference,Maimbung,495,northness,0.037282016827249506,8,-0.5826315157746337
+LOMO_common_reference,Maimbung,495,eastness,0.18780759649943174,5,0.9417619595875218
+LOMO_common_reference,Maimbung,495,distance_to_coast_m,0.2264999004312761,4,-0.7438132827681724
+LOMO_common_reference,Maimbung,495,WorldCover,0.03901288842017031,7,
+LOMO_common_reference,Panglima Estino,359,NDVI_MAM_median,0.6132018048957166,2,-0.9657038574608862
+LOMO_common_reference,Panglima Estino,359,NDBI_MAM_median,0.2903933831405337,3,0.9539785269426123
+LOMO_common_reference,Panglima Estino,359,GHSL_built_local_fraction,0.028345858775829114,9,0.322707004217679
+LOMO_common_reference,Panglima Estino,359,elevation_m,0.8262566898950049,1,-0.9486394064782442
+LOMO_common_reference,Panglima Estino,359,slope_deg,0.06282130588854987,6,-0.38573118436329834
+LOMO_common_reference,Panglima Estino,359,northness,0.03322029636535921,8,-0.28760033640845034
+LOMO_common_reference,Panglima Estino,359,eastness,0.1713767421737894,5,0.9376327561432292
+LOMO_common_reference,Panglima Estino,359,distance_to_coast_m,0.2510568195143319,4,-0.7450835383923824
+LOMO_common_reference,Panglima Estino,359,WorldCover,0.03468218419367784,7,
+LOMO_common_reference,Jolo,31,NDVI_MAM_median,0.5689479851117828,2,-0.959439748270918
+LOMO_common_reference,Jolo,31,NDBI_MAM_median,0.28691999177074823,3,0.9593943079972365
+LOMO_common_reference,Jolo,31,GHSL_built_local_fraction,0.02300124502584256,9,0.3164554538517699
+LOMO_common_reference,Jolo,31,elevation_m,0.8481339492629024,1,-0.9593077360690447
+LOMO_common_reference,Jolo,31,slope_deg,0.057810486270287766,6,-0.28075431775471144
+LOMO_common_reference,Jolo,31,northness,0.03507501188783689,7,-0.30585997803855425
+LOMO_common_reference,Jolo,31,eastness,0.1750155074779677,5,0.9382409829440053
+LOMO_common_reference,Jolo,31,distance_to_coast_m,0.25172908814168843,4,-0.7627052992624124
+LOMO_common_reference,Jolo,31,WorldCover,0.028800054885482106,8,
