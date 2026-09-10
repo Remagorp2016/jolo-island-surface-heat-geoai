@@ -1,23 +1,43 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated research article and the versioned Zenodo reproducibility record."
-title: "Jolo Island Surface Heat GeoAI Reproducibility Package"
+message: "If you use this repository, please cite the Version 2 Zenodo reproducibility record."
+title: "Jolo Island Surface Heat GeoAI: Reproducibility Package"
 type: dataset
+
 authors:
   - family-names: "Adju"
     given-names: "Fadzlur-Nijar A."
     orcid: "https://orcid.org/0009-0003-1865-7596"
     affiliation: "College of Computing Studies, Mindanao State University–Sulu, Philippines"
-version: "1.0.0"
-date-released: "2026-09-06"
+
+version: "2.0.0"
+date-released: "2026-09-09"
+
+abstract: >-
+  Version 2.0.0 provides the complete reproducibility archive for a matched
+  geographic validation study of prediction and model-attribution transfer
+  in environmental GeoAI using land-surface temperature across Jolo Island,
+  Philippines. The archive contains the frozen Version 1 modelling baseline
+  together with Version 2 spatial transfer, SHAP attribution-stability,
+  municipality-held-out, environmental-support, block-origin,
+  cross-algorithm, dominant-predictor ablation, seasonal robustness,
+  seed-sensitivity, and residual spatial-diagnostic outputs.
+
 keywords:
+  - "environmental GeoAI"
   - "land surface temperature"
-  - "GeoAI"
-  - "explainable machine learning"
+  - "geographic transferability"
+  - "prediction transfer"
+  - "model attribution"
   - "SHAP"
   - "spatial cross-validation"
+  - "explainable machine learning"
   - "Landsat"
   - "Jolo Island"
   - "Philippines"
-doi: "10.5281/zenodo.22541245"
-url: "https://doi.org/10.5281/zenodo.22541245"
+
+license: "CC-BY-4.0"
+
+doi: "10.5281/zenodo.22668346"
+url: "https://doi.org/10.5281/zenodo.22668346"
+
 repository-code: "https://github.com/Remagorp2016/jolo-island-surface-heat-geoai"
